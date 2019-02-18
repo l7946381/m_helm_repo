@@ -20,8 +20,9 @@ $ helm repo add stable https://burdenbear.github.io/kube-charts-mirror/
 
 2.clone代码到一台能访问国外地址的服务器
 ```
-$ git clone https://github.com/${YourUsername}/kube-charts-mirror.git
+$ git clone https://github.com/${YourUsername}/m_helm_repo.git
 ```
+https://github.com/l7946381/m_helm_repo.git
 
 3.启动更新容器(将GIT_REPO，GIT_USER_NAME，GIT_USER_EMAIL替换成您自己的)
 ```
@@ -44,6 +45,3 @@ UPDATE_INTERVAL: 更新间隔，秒为单位，默认86400(3天)
 ```
 
 4.在fork后的项目settings里设置开启gitPage，定位到master分支的docs
-
-联系邮箱：
-burdenbear@fxdayu.com

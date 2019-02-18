@@ -8,6 +8,6 @@ RUN pip install -r requirements.txt
 
 COPY ./*.* ./
 
-VOLUME ["/mnt/charts/"]
+VOLUME ["/data/charts/"]
 
-CMD ["/root/update.sh"]
+CMD ["/data/charts/update.sh"]
