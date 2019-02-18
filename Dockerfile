@@ -8,6 +8,6 @@ RUN pip install -r requirements.txt
 
 COPY ./*.* ./
 
-VOLUME ["/data/charts/"]
+VOLUME ["/data/m_helm_repo"]
 
-CMD ["/data/charts/update.sh"]
+CMD ["/data/m_helm_repo/update.sh"]

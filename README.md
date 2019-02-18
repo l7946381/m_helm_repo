@@ -32,10 +32,10 @@ https://github.com/l7946381/m_helm_repo.git
 ```
 docker build -t kube-charts-updater .
 docker run \
--e GIT_REPO=https://BurdenBear:XXX@github.com/BurdenBear/kube-charts-mirror.git \ 
--e GIT_USER_NAME=BurdenBear \ 
--e GIT_USER_EMAIL=burdenbear@fxdayu.com  \ 
--v /data/charts:/mnt/charts -d kube-charts-updater
+-e GIT_REPO=https://BurdenBear:XXX@github.com/l7946381/m_helm_repo.git \ 
+-e GIT_USER_NAME=l7946381 \ 
+-e GIT_USER_EMAIL=xxx@xxx.com  \ 
+-v /data/m_helm_repo:/data/m_helm_repo -d kube-charts-updater
 ```
 
 以上docker镜像完成从原仓库爬取charts上传到对应github项目中的工作，
