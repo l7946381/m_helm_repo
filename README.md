@@ -10,7 +10,11 @@ charts仓库组织方式其实很简单，只有一个索引文件和对应压�
 这里使用了官方推荐的使用gitPage搭建charts仓库的方式。
 
 ## 食用方式：
-```
+```shell
+# 推荐
+$ helm repo add stable https://l7946381.github.io/kube-charts-mirror/
+
+# 或者
 $ helm repo add stable https://burdenbear.github.io/kube-charts-mirror/
 ```
 
