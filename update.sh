@@ -9,8 +9,8 @@ interval=${UPDATE_INTERVAL:-86400}
 mkdir -p $work_path
 
 function init(){
-    git config user.name $user
-    git config user.email $email
+    git config --global user.name $user
+    git config --global user.email $email
 
     cd $work_path
     if [ ! -d ".git" ]; then
