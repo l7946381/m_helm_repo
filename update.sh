@@ -17,8 +17,8 @@ function init(){
       git init
     fi
 
-    git remote remove origin
-    git remote add origin $repo
+    #git remote remove origin
+    #git remote add origin $repo
     git pull origin master
 }
 
